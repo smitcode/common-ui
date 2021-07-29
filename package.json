@@ -1,6 +1,6 @@
 {
   "name": "common-ui-iron",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
