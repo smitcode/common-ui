@@ -1,6 +1,6 @@
 {
   "name": "common-ui-iron",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
@@ -13,7 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "antd": "^4.16.9"
-   
   },
   "peerDependencies": {
     "react": "^17.0.2"
