@@ -3,18 +3,18 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import postcss from "rollup-plugin-postcss";
 import babel from "@rollup/plugin-babel";
-import pkg from "./package.json";
+import json from "@rollup/plugin-json";
 const extensions = [".js", ".ts"];
 
 export default {
   input: "index.js",
   output: [
     {
-      file: pkg.main,
+      file: "./dist/bundle.cjs.js",
       format: "cjs",
     },
     {
-      file: pkg.module,
+      file: "./dist/bundle.esm.js",
       format: "es",
     },
   ],
@@ -32,5 +32,6 @@ export default {
     resolve(),
     commonjs(),
     postcss(),
+    json({ compact: true }),
   ],
 };
